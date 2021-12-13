@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Зарезервировать билет на мероприятие {{ event.title }}</h2>
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="{{ event.photo.url }}" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ event.title }}</h5>
+                    <p class="card-text">Начало: {{ event.date|date:"Y-m-d H:i" }}</p>
+                </div>
+                <div class="card-footer bg-transparent">
+                    <form action="{% url 'reserve_ticket' event.pk %}" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            <label for="{{ form.first_name.id_for_label }}" class="form-label">
+                                Имя:
+                            </label>
+                            {{ form.first_name }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="{{ form.last_name.id_for_label }}" class="form-label">
+                                Фамилия:
+                            </label>
+                            {{ form.last_name }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="{{ form.type.id_for_label }}" class="form-label">
+                                Тип билета:
+                            </label>
+                            {{ form.type }}
+                        </div>
+                        <div class="mb-3">
+                            <label for="{{ form.email.id_for_label }}" class="form-label">
+                                Адрес электронной почты:
+                            </label>
+                            {{ form.email }}
+                        </div>
+                        <label for="{{ form.event_idevent.id_for_label }}" class="form-label"></label>
+                        <input id="{{ form.event_idevent.id_for_label }}" value="{{ event.pk }}" name="event_idevent"
+                               type="hidden">
+                        <button type="submit" class="btn btn-outline-dark">Зарезервировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

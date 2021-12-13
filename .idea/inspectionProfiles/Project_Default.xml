@@ -1,0 +1,91 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myCustomPropertiesEnabled" value="true" />
+      <option name="myIgnoreVendorSpecificProperties" value="false" />
+      <option name="myCustomPropertiesList">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="user-select" />
+            <item index="1" class="java.lang.String" itemvalue="-padding-top" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="4">
+            <item index="0" class="java.lang.String" itemvalue="cols" />
+            <item index="1" class="java.lang.String" itemvalue="bordercolor" />
+            <item index="2" class="java.lang.String" itemvalue="border" />
+            <item index="3" class="java.lang.String" itemvalue="name" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="16">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="am" />
+            <item index="7" class="java.lang.String" itemvalue="em" />
+            <item index="8" class="java.lang.String" itemvalue="li" />
+            <item index="9" class="java.lang.String" itemvalue="b" />
+            <item index="10" class="java.lang.String" itemvalue="style" />
+            <item index="11" class="java.lang.String" itemvalue="font" />
+            <item index="12" class="java.lang.String" itemvalue="span" />
+            <item index="13" class="java.lang.String" itemvalue="ul" />
+            <item index="14" class="java.lang.String" itemvalue="strong" />
+            <item index="15" class="java.lang.String" itemvalue="td" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N803" />
+          <option value="N806" />
+          <option value="N802" />
+          <option value="N813" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="int.split" />
+          <option value="str.__setitem__" />
+          <option value="list.split" />
+          <option value="int.__setitem__" />
+          <option value="tuple.remove" />
+          <option value="set.__getitem__" />
+          <option value="str.__sub__" />
+          <option value="super.append" />
+          <option value="list.self" />
+          <option value="main.Situation.__getitem__" />
+          <option value="object.main_menu" />
+          <option value="list.__getitem__" />
+          <option value="int.append" />
+          <option value="type.format" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SpellCheckingInspection" enabled="false" level="TYPO" enabled_by_default="false">
+      <option name="processCode" value="true" />
+      <option name="processLiterals" value="true" />
+      <option name="processComments" value="true" />
+    </inspection_tool>
+  </profile>
+</component>
